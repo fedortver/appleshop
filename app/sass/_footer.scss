@@ -1,0 +1,141 @@
+@import '_mixins';
+
+/* --------- footer --------- */
+
+.footer {
+	background: url("/img/footer-bg.jpg") 0 0 repeat;
+
+	.container {
+		min-height: 228px - 60px;
+		padding-top: 60px;
+	}
+}
+
+.footer__logo-text {
+	position: absolute;
+	top: 0;
+	left: -9999px;
+}
+
+.footer__menu {
+	margin-left: 256px - 50px;
+	width: 500px;
+}
+
+.footer__menu-item {
+	display: inline-block;
+	margin-left: 61px;
+}
+
+.footer__menu-title {
+	@include electra_bold;
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 17px;
+	margin-bottom: 10px;
+}
+
+.footer__menu-link {
+	@include electra_light;
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 17px;
+	margin-bottom: 5px;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+.footer__logo {
+	top: 100px;
+	left: 0;
+	position: absolute;
+}
+
+.footer__logo__link{
+	display: block;
+}
+
+.footer__socials {
+	right: 0;
+	top: 73px;
+	position: absolute;
+}
+
+.footer__socials-stores {
+	@include cf;
+	margin-bottom: 26px;
+}
+
+.footer__menu-options {
+	margin-bottom: 6px;
+}
+
+.footer__socials-store {
+	margin-left: 5px;
+	float: left;
+
+	a {
+		display: block;
+
+		img {
+			display: block;
+		}
+	}
+}
+
+.footer__socials-networks {
+	@include cf;
+}
+
+.footer__socials-network {
+	float: left;
+	margin-left: 7px;
+
+	&:first-child {
+		margin-left: 0px;
+	}
+}
+
+.footer__socials-link {
+	width: 44px;
+	height: 44px;
+	display: block;	
+	background: url("/img/socials-big.png") 0 0 no-repeat;
+
+
+	&:hover {
+		opacity:0.6;
+	}
+}
+
+.footer__socials-network_ {
+	&vk {
+		.footer__socials-link {
+			background-position: 0 0;
+		}
+	}
+
+	&fb {
+		.footer__socials-link {
+			background-position: -53px 0;
+		}
+	}
+
+	&tw {
+		.footer__socials-link {
+			background-position: -103px 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+

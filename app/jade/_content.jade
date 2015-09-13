@@ -1,0 +1,56 @@
+section.breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                each breadcrumb, indx in ['Главная', 'Каталог', 'iPad Air Wi-Fi + Cellular 128gb - silver']
+                    li(class="breadcrumbs__item " + ((indx == 2) ? "active" : ""))
+                        a(href="#").breadcrumbs__link= breadcrumb
+    section.product
+        .container
+            .product__pic
+                .product__slideshow
+                    .product__slideshow-display
+                        img(src="//lorempixel.com/286/232/technics/1")
+                    .product__slideshow-slider
+                        ul.product__slider-list
+                            - for (var i = 0; i < 5; i++)
+                                li.product__slider-item
+                                    a(href="#").product__slider-link
+                                        img(src="//lorempixel.com/75/75/technics/" + i)
+            .product__text
+                .product__text-title iPad Air Wi-Fi + Cellular 128GB - Silver
+                .product__text-options
+                    table.product__text-table
+                        tr
+                            td Артикул
+                            td 4234352525
+                        tr
+                            td Опция
+                            td включена
+                        tr
+                            td Цвет
+                            td Серебристый
+                        tr
+                            td Размер
+                            td 1280*1245*90
+                        tr
+                            td Вес
+                            td 200 кг
+                        tr
+                            td Опция
+                            td включена
+                        tr
+                            td Цыет
+                            td серебристый
+                        tr
+                            td Размер
+                            td 1280*1245*90
+                        tr
+                            td Вес
+                            td 200 кг
+    section.about
+        .container
+            .about__title Пара слов о магазине
+            .about__text
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel venenatis purus. Integer vestibulum ullamcorper purus sed vehicula. Donec ultricies eget ipsum vel scelerisque. Phasellus eleifend diam id sem ultrices vehicula. In vehicula rutrum magna, et pulvinar ligula tincidunt vitae. Morbi varius finibus blandit. Mauris commodo tincidunt egestas. Vestibulum elementum nibh mauris, tristique cursus risus semper sed. Donec lectus libero, condimentum mattis pellentesque luctus, venenatis sit amet dui. Fusce quis orci massa. Fusce malesuada turpis eros, in faucibus ipsum tristique sit amet. Praesent euismod diam ut enim accumsan, eu venenatis sapien tincidunt. Maecenas iaculis ut leo eget faucibus. Duis non eros tristique, consequat sapien vitae, egestas dolor. Etiam egestas purus at nisi egestas tempus.
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel venenatis purus. Integer vestibulum ullamcorper purus sed vehicula. Donec ultricies eget ipsum vel scelerisque. Phasellus eleifend diam id sem ultrices vehicula. In vehicula rutrum magna, et pulvinar ligula tincidunt vitae. Morbi varius finibus blandit. Mauris commodo tincidunt egestas. Vestibulum elementum nibh mauris, tristique cursus risus semper sed. Donec lectus libero, condimentum mattis pellentesque luctus, venenatis sit amet dui. Fusce quis orci massa. Fusce malesuada turpis eros, in faucibus ipsum tristique sit amet. Praesent euismod diam ut enim accumsan, eu venenatis sapien tincidunt. Maecenas iaculis ut leo eget faucibus. Duis non eros tristique, consequat sapien vitae, egestas dolor. Etiam egestas purus at nisi egestas tempus.
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel venenatis purus. Integer vestibulum ullamcorper purus sed vehicula. Donec ultricies eget ipsum vel scelerisque. Phasellus eleifend diam id sem ultrices vehicula. In vehicula rutrum magna, et pulvinar ligula tincidunt vitae. Morbi varius finibus blandit. Mauris commodo tincidunt egestas. Vestibulum elementum nibh mauris, tristique cursus risus semper sed. Donec lectus libero, condimentum mattis pellentesque luctus, venenatis sit amet dui. Fusce quis orci massa. Fusce malesuada turpis eros, in faucibus ipsum tristique sit amet. Praesent euismod diam ut enim accumsan, eu venenatis sapien tincidunt. Maecenas iaculis ut leo eget faucibus. Duis non eros tristique, consequat sapien vitae, egestas dolor. Etiam egestas purus at nisi egestas tempus.

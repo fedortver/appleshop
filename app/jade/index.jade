@@ -1,0 +1,32 @@
+doctype html
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    // Сео теги
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    // Иконки
+    link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+    link(rel='icon', href='favicon.ico', type='image/x-icon')
+    title ЭплШоп
+    // Стили
+    link(rel="stylesheet" href="bower/normalize.css/normalize.css")
+    link(rel="stylesheet" href="css/main.css")
+    script(src="bower/modernizr/modernizr.js")
+body
+    .wrapper
+        .main-container
+            include _header.jade
+            //навигация
+            include _nav.jade                
+            //основной контент
+            include _content.jade
+
+    include _footer.jade
+   
+    script(src="bower/jquery/jquery.min.js")
+    script(src="bower/jquery.columnizer/src/jquery.columnizer.min.js")
+    script(src="js/main.js")
+
+

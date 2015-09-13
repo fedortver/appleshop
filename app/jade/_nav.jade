@@ -1,0 +1,6 @@
+nav.nav
+    .container
+        ul.nav__list
+            each title, ndx in ['Мобильные телефоны', 'Планшеты', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Apple TV', 'Аксессуары']
+                li(class="nav__item " + ((ndx == 6) ? 'nav__item_last' : '') + ((ndx == 1) ? 'nav__item_active' : ''))
+                        a(href="#").nav__link= title

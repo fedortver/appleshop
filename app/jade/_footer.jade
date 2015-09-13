@@ -1,0 +1,37 @@
+.footer
+    .container
+        .footer__logo
+            a(href="/").footer__logo__link
+                img(src="/img/logo-white.png").footer__logo-img
+            .footer__logo-text ЭпплShop
+        ul.footer__menu
+           li.footer__menu-item
+               .footer__menu-title О магазине
+               ul.footer__menu-inners
+                   each title in ["О нас", "Наши цены", "Наши скидки", "Акции"]
+                        li.footer__menu-options
+                            a(href="#").footer__menu-link= title
+           li.footer__menu-item
+                .footer__menu-title Каталог
+                ul.footer__menu-inners
+                    each title in ["Смартфоны", "Планшеты", "Компьютеры", "Аксессуары"]
+                       li.footer__menu-options
+                           a(href="#").footer__menu-link= title
+            li.footer__menu-item
+                .footer__menu-title Контакты
+                ul.footer__menu-inners
+                    each title in ["Телефоны", "Адреса", "Карта проезда", "Обратная связь"]
+                        li.footer__menu-options
+                            a(href="#").footer__menu-link= title
+        .footer__socials
+            ul.footer__socials-stores
+                li.footer__socials-store
+                    a(href="#").footer__socials-store-link
+                        img(src="/img/appstore.png")
+                li.footer__socials-store
+                    a(href="").footer__socials-store-link
+                        img(src="/img/googleplay.png")
+            ul.footer__socials-networks
+                each network in ['vk', 'fb', 'tw']
+                    li(class="footer__socials-network footer__socials-network_" + network)
+                        a(href="#").footer__socials-link
